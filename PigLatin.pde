@@ -38,10 +38,11 @@ public String pigLatin(String sWord){
 		return sWord + "ay";
 	} else if(sWord.substring(0,2).equals("qu")){
 		return sWord.substring(2,sWord.length()) +sWord.substring(0,2) + "ay";
-	} else if(sWord.substring(0,2).equals("th")){
+	} else if(sWord.substring(0,3).equals("thr")){
+		return sWord.substring(3,sWord.length()) +sWord.substring(0,2) + "ay";
+	} else if(sWord.substring(0,2).equals("st")){
 		return sWord.substring(2,sWord.length()) +sWord.substring(0,2) + "ay";
-	} 
-	else if(findFirstVowel(sWord) == 0){
+	} else if(findFirstVowel(sWord) == 0){
 		return sWord + "ay";
 	} else {
 		return sWord.substring(1,sWord.length()) +sWord.substring(0,1) + "ay";
